@@ -27,7 +27,7 @@ while repeat:
                         net = gross * (0.82 + (0.005 * children))
                         print(net, "is your net income")
                         repeat = False
-                except:
+                except ValueError:
                     print("try again, this time input an numerals (integers)")
                     repeat = True
         else:
@@ -47,6 +47,6 @@ while repeat:
                 net = gross * 0.82
                 print(net, "is your net income")
                 repeat = False
-    except:
+    except ValueError:
         print("I asked you to input an integer, please do so")
         repeat = True
