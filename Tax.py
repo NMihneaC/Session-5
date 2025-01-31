@@ -23,7 +23,9 @@ if check2 == "yes":
                     print("Goodbye :(")
                     repeat = False
 
-        else:
+        elif lives == 0:
             print("You lost :(")
+            repeat = False
 else:
     print("Goodbye :(")
+    repeat = False
